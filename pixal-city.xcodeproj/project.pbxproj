@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A5E12DF20E5815400FC8A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5E12DE20E5815400FC8A8E /* AppDelegate.swift */; };
-		4A5E12E120E5815400FC8A8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5E12E020E5815400FC8A8E /* ViewController.swift */; };
+		4A5E12E120E5815400FC8A8E /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5E12E020E5815400FC8A8E /* MapVC.swift */; };
 		4A5E12E420E5815400FC8A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5E12E220E5815400FC8A8E /* Main.storyboard */; };
 		4A5E12E620E5815500FC8A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5E12E520E5815500FC8A8E /* Assets.xcassets */; };
 		4A5E12E920E5815500FC8A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5E12E720E5815500FC8A8E /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		4A5E12DB20E5815400FC8A8E /* pixal-city.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pixal-city.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5E12DE20E5815400FC8A8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A5E12E020E5815400FC8A8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A5E12E020E5815400FC8A8E /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		4A5E12E320E5815400FC8A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A5E12E520E5815500FC8A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A5E12E820E5815500FC8A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,46 @@
 		4A5E12DD20E5815400FC8A8E /* pixal-city */ = {
 			isa = PBXGroup;
 			children = (
+				4A5E12F320E5819B00FC8A8E /* Extensions */,
+				4A5E12F220E5819000FC8A8E /* Utilities */,
+				4A5E12F120E5817C00FC8A8E /* Controllers */,
+				4A5E12F020E5817700FC8A8E /* Views */,
 				4A5E12DE20E5815400FC8A8E /* AppDelegate.swift */,
-				4A5E12E020E5815400FC8A8E /* ViewController.swift */,
 				4A5E12E220E5815400FC8A8E /* Main.storyboard */,
 				4A5E12E520E5815500FC8A8E /* Assets.xcassets */,
 				4A5E12E720E5815500FC8A8E /* LaunchScreen.storyboard */,
 				4A5E12EA20E5815500FC8A8E /* Info.plist */,
 			);
 			path = "pixal-city";
+			sourceTree = "<group>";
+		};
+		4A5E12F020E5817700FC8A8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A5E12F120E5817C00FC8A8E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A5E12F220E5819000FC8A8E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4A5E12E020E5815400FC8A8E /* MapVC.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4A5E12F320E5819B00FC8A8E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A5E12E120E5815400FC8A8E /* ViewController.swift in Sources */,
+				4A5E12E120E5815400FC8A8E /* MapVC.swift in Sources */,
 				4A5E12DF20E5815400FC8A8E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

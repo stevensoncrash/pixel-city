@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MapVC.swift
 //  pixal-city
 //
 //  Created by Stephen Reyes on 6/28/18.
