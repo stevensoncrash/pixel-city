@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,21 +25,6 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNa-X4-8sU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtc-ce-LhE">
-                                <rect key="frame" x="309" y="597" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="ER1-tM-HqD"/>
-                                    <constraint firstAttribute="height" constant="50" id="a6C-m4-7xC"/>
-                                </constraints>
-                                <state key="normal" image="locationButton"/>
-                                <connections>
-                                    <action selector="centerMapBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f08-7E-eYC"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6dh-98-zVd">
-                                <rect key="frame" x="0.0" y="663" width="375" height="0.0"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufK-KN-axQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
@@ -63,24 +47,46 @@
                                     <constraint firstAttribute="width" constant="375" id="YbI-Qs-AwP"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtc-ce-LhE">
+                                <rect key="frame" x="309" y="616" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ER1-tM-HqD"/>
+                                    <constraint firstAttribute="height" constant="50" id="a6C-m4-7xC"/>
+                                </constraints>
+                                <state key="normal" image="locationButton"/>
+                                <connections>
+                                    <action selector="centerMapBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f08-7E-eYC"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSi-Sw-nBm" userLabel="PullUpView">
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xGx-wv-0oa"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SNa-X4-8sU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5wY-ov-ynM"/>
                             <constraint firstItem="SNa-X4-8sU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="7Ed-lZ-aIg"/>
+                            <constraint firstAttribute="trailing" secondItem="aSi-Sw-nBm" secondAttribute="trailing" id="KAg-Na-lPH"/>
                             <constraint firstAttribute="trailing" secondItem="ufK-KN-axQ" secondAttribute="trailing" id="Mxw-TZ-INV"/>
-                            <constraint firstItem="thf-KC-9Go" firstAttribute="top" secondItem="Mtc-ce-LhE" secondAttribute="bottom" constant="20" id="RJi-MJ-SU1"/>
                             <constraint firstItem="ufK-KN-axQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WOF-q3-dNv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Mtc-ce-LhE" secondAttribute="trailing" id="dio-tf-ieJ"/>
-                            <constraint firstItem="6dh-98-zVd" firstAttribute="top" secondItem="SNa-X4-8sU" secondAttribute="bottom" id="gkX-mH-ez2"/>
+                            <constraint firstItem="thf-KC-9Go" firstAttribute="top" secondItem="aSi-Sw-nBm" secondAttribute="bottom" id="fs5-Hi-mR4"/>
+                            <constraint firstItem="aSi-Sw-nBm" firstAttribute="top" secondItem="Mtc-ce-LhE" secondAttribute="bottom" id="mve-FB-2Xn"/>
                             <constraint firstItem="ufK-KN-axQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o6P-fp-sQ8"/>
                             <constraint firstItem="SNa-X4-8sU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="p5I-3M-QcG"/>
+                            <constraint firstItem="aSi-Sw-nBm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qcu-0v-FgC"/>
                             <constraint firstItem="SNa-X4-8sU" firstAttribute="bottom" secondItem="thf-KC-9Go" secondAttribute="top" id="xvj-aN-D8e"/>
                             <constraint firstItem="ufK-KN-axQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yla-1F-Wts"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="SNa-X4-8sU" id="7RY-IH-CQl"/>
+                        <outlet property="pullUpHeightConstraint" destination="xGx-wv-0oa" id="k7c-c1-KUh"/>
+                        <outlet property="pullUpView" destination="aSi-Sw-nBm" id="KjS-Ec-pvD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
