@@ -142,8 +142,8 @@ extension MapVC: MKMapViewDelegate{
         addSwipe()
         addSpinner()
         addProgressLbl()
-      
         
+    
         
         let touchPoint = sender.location(in: mapView)
         let touchCoordinate = mapView.convert(touchPoint, toCoordinateFrom: mapView)
