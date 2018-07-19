@@ -12,6 +12,7 @@
 		4A5E12E420E5815400FC8A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5E12E220E5815400FC8A8E /* Main.storyboard */; };
 		4A5E12E620E5815500FC8A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5E12E520E5815500FC8A8E /* Assets.xcassets */; };
 		4AAFBD22210107F400198C44 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAFBD21210107F400198C44 /* Constants.swift */; };
+		4AAFBD2421014E9800198C44 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAFBD2321014E9800198C44 /* PopVC.swift */; };
 		4AB412B020E6B82D00274686 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB412AF20E6B82D00274686 /* DroppablePin.swift */; };
 		4AB56B8A210018E200F1719F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB56B89210018E200F1719F /* PhotoCell.swift */; };
 		991687EC2B8F2382667BCAB1 /* Pods_pixal_city.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E25F936CA6E0FADAFE4CCD /* Pods_pixal_city.framework */; };
@@ -26,6 +27,7 @@
 		4A5E12E520E5815500FC8A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A5E12EA20E5815500FC8A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AAFBD21210107F400198C44 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4AAFBD2321014E9800198C44 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		4AB412AF20E6B82D00274686 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		4AB56B89210018E200F1719F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		AB0532043D28073CA3F89C1D /* Pods-pixal-city.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixal-city.release.xcconfig"; path = "Pods/Target Support Files/Pods-pixal-city/Pods-pixal-city.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				4A5E12E020E5815400FC8A8E /* MapVC.swift */,
+				4AAFBD2321014E9800198C44 /* PopVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AAFBD2421014E9800198C44 /* PopVC.swift in Sources */,
 				4AAFBD22210107F400198C44 /* Constants.swift in Sources */,
 				4AB56B8A210018E200F1719F /* PhotoCell.swift in Sources */,
 				4A5E12E120E5815400FC8A8E /* MapVC.swift in Sources */,
