@@ -46,6 +46,11 @@
                                     <constraint firstItem="asf-my-kOs" firstAttribute="centerX" secondItem="ufK-KN-axQ" secondAttribute="centerX" id="JY9-TO-uVT"/>
                                     <constraint firstAttribute="width" constant="375" id="YbI-Qs-AwP"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="asf-my-kOs"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtc-ce-LhE">
                                 <rect key="frame" x="309" y="616" width="50" height="50"/>
@@ -85,7 +90,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="SNa-X4-8sU" id="7RY-IH-CQl"/>
-                        <outlet property="pullUpHeightConstraint" destination="xGx-wv-0oa" id="k7c-c1-KUh"/>
+                        <outlet property="pullUpHeightConstraint" destination="xGx-wv-0oa" id="Mx8-4C-0un"/>
                         <outlet property="pullUpView" destination="aSi-Sw-nBm" id="KjS-Ec-pvD"/>
                     </connections>
                 </viewController>
